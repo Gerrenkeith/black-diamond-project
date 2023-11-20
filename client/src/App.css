@@ -41,6 +41,12 @@
 .title {
   font-size: 2vw;
   color: #606060;
+  padding-top: 5rem;
+}
+
+.title > h1 {
+  margin-top: 0;
+  padding-top: 3vh;
 }
 
 
@@ -264,14 +270,35 @@
 
 .navbar {
   background-color: #332f42;
+  height: 5rem;
+  position: fixed;
+  width: 100%;
 }
 
-.navlist {
-  list-style-type: none;
+.navbar > div {
+  height: 5vh;
 }
 
 .tabs {
   text-decoration: none;
   color: white;
+  font-size: 1.5vw;
 }
+
+.siteLogo {
+  height: 7vh;
+  width: 5vw;
+}
+
+.tabs:hover {
+  color: violet;
+}
+
+.tabs:focus {
+  color: violet;
+}
+
+
+
+
 

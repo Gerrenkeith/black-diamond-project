@@ -1,19 +1,21 @@
 import React from "react";
 import { NavLink } from 'react-router-dom';
+import blackdiamond from "./blackdiamondlogo.png";
 
 function NavBar ()  {
     return (
         <div className="navbar">
-            <ul className="navlist">
-                <li>
-                    <NavLink to="/" activeStyle={{color: "violet",}}  className="tabs">
-                        Home
-                    </NavLink>
-                    <NavLink to="/shop" activeStyle={{color: "violet",}} className="tabs">
-                        Shop
-                    </NavLink>
-                </li>
-            </ul>
+            <div className="navLogo">
+               <img src={blackdiamond} className="siteLogo" alt="siteLogo"/>
+            </div>
+            <div>
+                <NavLink to="/" className="tabs">
+                    Home
+                </NavLink>
+                <NavLink to="/shop" className="tabs">
+                    Shop
+                </NavLink>    
+            </div>
         </div>
     )
 }

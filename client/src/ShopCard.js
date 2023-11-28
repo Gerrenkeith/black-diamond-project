@@ -1,13 +1,13 @@
 import React from "react";
+import blackdiamond from "./blackdiamondlogo.png";
 
-function ShopCard ({items}){
-    console.log(items)
-
-
-    return (<div>
-
-
-    </div>
+function ShopCard ({item}){
+  console.log(item)
+ 
+    return (
+        <div className="ShopCard">  
+          <img src={blackdiamond} />
+        </div>
     )
 };
 

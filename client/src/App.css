@@ -298,7 +298,27 @@
   color: violet;
 }
 
+/*Shop.js styling*/
 
+.Shop {
+  padding-top: 20vh;
+}
 
+/*ShopCard.js styling*/
+
+.ShopCard {
+  width: 16vw;
+  height: 50.7vh;
+  display: inline-block;
+  background-color: #ffffff;
+  border: 1px solid black;
+  margin-right: .5rem;
+  margin-bottom: 2vh;
+}
+
+.ShopCard > img {
+  width: 8.4vw;
+  height: 21.4vh;
+}
 
 

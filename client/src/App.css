@@ -304,11 +304,16 @@
   padding-top: 20vh;
 }
 
+/*ShopRows.js styling*/
+.ShopRows {
+  
+}
+
 /*ShopCard.js styling*/
 
 .ShopCard {
-  width: 16vw;
-  height: 50.7vh;
+  width: 15vw;
+  height: 65vh;
   display: inline-block;
   background-color: #ffffff;
   border: 1px solid black;
@@ -316,9 +321,42 @@
   margin-bottom: 2vh;
 }
 
-.ShopCard > img {
-  width: 8.4vw;
-  height: 21.4vh;
+.ShopItemImg {
+  height: 33vh;
+  width: 14.2vw;
+  border: 1px solid black;
+  margin-left: .4vw;
+  margin-top: .7vh;
 }
 
+.ShopCard > div > img {
+  width: 8.4vw;
+  height: 21.4vh;
+  margin-top: 1vh;
+}
 
+.ShopItemDescription {
+  height: 26vh;
+  width: 14.2vw;
+  text-align: left;
+  border: 1px solid black;
+  margin-left: .4vw;
+  font-size: 1vw;
+}
+
+.ShopItemDescription > p {
+  margin: .2vh 0 .2vh 0;
+  }
+
+.ShopItemDescription > h3 , h5 {
+  margin: .2vh 0 .2vh 0;
+}
+
+.stamp {
+  color: #ffffff;
+  background-color: #332f42;
+}
+
+.stamp > h3 {
+  padding-bottom: 2vh;
+}

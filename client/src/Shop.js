@@ -1,7 +1,13 @@
-import React from "react";
+import React, { useState } from 'react';
 import ShopRows from "./ShopRows";
 
 function Shop () {
+
+    const [showContent, setShowContent] = useState(true);
+
+  const toggleContent = () => {
+    setShowContent(!showContent);
+  };
 
     const items = [
         { id: 1, name: 'item 1', price: '$300' },
@@ -30,6 +36,9 @@ function Shop () {
             {groupedItems.map((group, index) => ( 
                 <ShopRows key={index} items={group} />
             ))}
+             <section className="stamp">
+                <h3>©️ Black Diamond Dynamics</h3>
+            </section>
         </div>
 
     );

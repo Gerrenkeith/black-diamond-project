@@ -21,7 +21,7 @@ function ShopCard ({item, addToCart}){
             <h3>${item.price}</h3>
             <h5>Free Shipping</h5>
           </div>
-          <button className="addToCart" onClick={ () => addToCart(item)}>Add to Cart</button>
+          <button className="addToCart" onClick={() => addToCart(item)}>Add to Cart</button>
         </div>
     )
 };

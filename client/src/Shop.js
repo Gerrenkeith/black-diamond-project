@@ -1,7 +1,7 @@
 import React from 'react';
 import ShopRows from "./ShopRows";
 
-function Shop (items) {
+function Shop ({items, addToCart}) {
 
     const groupedItems = Array.from({ length: Math.ceil(items.length / 5)}, (_, index) => 
 
@@ -14,7 +14,7 @@ function Shop (items) {
         
         <div className="Shop"> 
             {groupedItems.map((group, index) => ( 
-                <ShopRows key={index} items={group}/>
+                <ShopRows key={index} items={group} addToCart={addToCart}/>
             ))}
              <section className="stamp">
                 <h3>©️ Black Diamond Dynamics</h3>

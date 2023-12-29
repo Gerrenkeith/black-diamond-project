@@ -14,8 +14,13 @@ function NavBar ()  {
                 </NavLink>
                 <NavLink to="/shop" className="tabs">
                     Shop
-                </NavLink>    
+                </NavLink>                  
             </div>
+            <div>
+                <NavLink to="/cart" className="cart">
+                     Cart🛒
+                </NavLink>    
+            </div> 
         </div>
     )
 }

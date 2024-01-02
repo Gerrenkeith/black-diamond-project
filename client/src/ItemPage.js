@@ -1,20 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import StarRating from "./StarRating";
 import blackdiamond from "./blackdiamondlogo.png";
 
 function ItemPage ({item}){
-    const [isOpen, setIsOpen ] = useState(false);
-
-    const handleToggle = () => {
-        setIsOpen(!isOpen);
-    }
-
-    const handleItemClick = (item) => {
-        console.log(`Selected item: ${item}`);
-        setIsOpen(false);
-    };
-
-    console.log(item)
+  console.log(item)
+  
     return (
         <div className="ItemPage">
             <div className="productSection">

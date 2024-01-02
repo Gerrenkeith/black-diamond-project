@@ -1,11 +1,11 @@
 import React from "react";
 import blackdiamond from "./blackdiamondlogo.png";
 import StarRating from "./StarRating";
-import { Link } from "react-router-dom/cjs/react-router-dom.min";
+import { Link } from 'react-router-dom';
 
 function ShopCard ({item, addToCart}){
-  console.log(item)
- 
+  console.log(item.id)
+
     return (
         <div className="ShopCard">  
           <div className="ShopItemImg">
@@ -13,9 +13,9 @@ function ShopCard ({item, addToCart}){
           </div>
           <div className="ShopItemDescription">
             <span><strong>{item.name}</strong></span>
-            <a href={`localhost:3000/item/${item.id}`} >
+            <Link key={item.id} to={`/item/${item.id}`}>
               <p>Flat Bench, Foldable Flat Weight Bench Easy Assembly for Strength Training Bench Press, 600/1000 LBS 2 Versions </p>
-            </a>
+              </Link>
             <StarRating rating={3} />
             <span>3K+ bought in past month</span>
             <h3>${item.price}</h3>

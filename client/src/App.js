@@ -53,7 +53,6 @@ function addToCart ( item ){
           </Route>
           {items.map((item) => (
             <Route key={item.id} path={`/item/${item.id}`}>
-              {/* Render the ItemDetail component and pass the current item */}
               <ItemPage item={item} addToCart={addToCart} />
             </Route>
           ))}
